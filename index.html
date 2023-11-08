@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="https://storage.googleapis.com/kesyasakha.appspot.com/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>My portfolio website - Kesya Sakha Nesya Arimawan</title>
 </head>
@@ -27,14 +27,14 @@
                 <div class="profile__border">
                     <div class="profile__perfil">
                         <!-- Insert your image, according to the example size of the portfolio -->
-                        <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img.png">
-                            <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img.png" alt="">
+                        <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img/img.png">
+                            <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img/img.png" alt="">
                         </a>
                     </div>
                 </div>
 
                 <h2 class="profile__name">Kesya Sakha Nesya Arimawan</h2>
-                <h3 class="profile__profession">Information Systems Student & Cloud Computing Cohort at Bangkit Academy 2023</h3>
+                <h3 class="profile__profession">Information Systems Student & Cloud Computing Cohort at Bangkit Academy 2023 </h3>
 
                 <ul class="profile__social">
                     <a href="https://www.linkedin.com/in/kesya-sakha-nesya-arimawan-005ba3138/" target="_blank" class="profile__social-link">
@@ -77,90 +77,86 @@
         </div>
     </header>
 
+
     <!--====================================== MAIN ======================================-->
     <main class="main">
         <section class="filters container">
             <!--=============== FILTERS TABS ===============-->
             <ul class="filters__content">
-                <li class="filters__button filter-tab-active" data-target="projects">
+                <button class="filters__button filter-tab-active" data-target="#projects">
                     Projects
-                </li>
-                <li class="filters__button" data-target="skills">
+                </button>
+                <button class="filters__button" data-target="#skills">
                     Skills
-                </li>
+                </button>
             </ul>
 
-           <div class="filters__sections">
-    <!-- PROJECTS -->
-    <div class="projects__content grid filters__active" data-content="projects">
-        <article class="projects__card">
-            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-            <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_1.png">
-                <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_1.png" alt="" class="projects__img">
-            </a>
+            <div class="filters__sections">
+                <!--=============== PROJECTS ===============-->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <article class="projects__card">
+                        <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                        <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_1.png">
+                            <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_1.png" alt="" class="projects__img">
+                        </a>
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web Designer</span>
+                                <h3 class="projects__title">Profile Page</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-            <div class="projects__modal">
-                <div>
-                    <span class="projects__subtitle">Web Designer</span>
-                    <h3 class="projects__title">Profile Page</h3>
-                    <a href="#" class="projects__button button button__small">
-                        <i class="ri-link"></i>
-                    </a>
+                    <article class="projects__card">
+                        <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_2.png">
+                            <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_2.png" alt="" class="projects__img">
+                        </a>
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Graphic Designer</span>
+                                <h3 class="projects__title">Logo, Poster, Banner & etc</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_3.png">
+                            <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_3.png" alt="" class="projects__img">
+                        </a>
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Desktop Programming</span>
+                                <h3 class="projects__title">Boutique Sinar Jaya</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_4.png">
+                            <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_4.png" alt="" class="projects__img">
+                        </a>
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Nizeshot</span>
+                                <h3 class="projects__title">Coffee Shop</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </div>
-        </article>
 
-        <article class="projects__card">
-            <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_2.png">
-                <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_2.png" alt="" class="projects__img">
-            </a>
-
-            <div class="projects__modal">
-                <div>
-                    <span class="projects__subtitle">Graphic Designer</span>
-                    <h3 class="projects__title">Logo, Poster, Banner & etc</h3>
-                    <a href="#" class="projects__button button button__small">
-                        <i class="ri-link"></i>
-                    </a>
-                </div>
-            </div>
-        </article>
-
-        <article class="projects__card">
-            <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_3.png">
-                <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_3.png" alt="" class="projects__img">
-            </a>
-
-            <div class="projects__modal">
-                <div>
-                    <span class="projects__subtitle">Desktop Programming</span>
-                    <h3 class="projects__title">Boutique Sinar Jaya</h3>
-                    <a href="#" class="projects__button button button__small">
-                        <i class="ri-link"></i>
-                    </a>
-                </div>
-            </div>
-        </article>
-
-        <article class="projects__card">
-            <a href="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_4.png">
-                <img src="https://storage.googleapis.com/kesyasakha.appspot.com/img/project_4.png" alt="" class="projects__img">
-            </a>
-
-            <div class="projects__modal">
-                <div>
-                    <span class="projects__subtitle">Nizeshot</span>
-                    <h3 class="projects__title">Coffee Shop</h3>
-                    <a href="#" class="projects__button button button__small">
-                        <i class="ri-link"></i>
-                    </a>
-                </div>
-            </div>
-        </article>
-    </div>
-</div>
-
-           <!--=============== SKILLS ===============-->
+                <!--=============== SKILLS ===============-->
                 <div class="skills__content grid" data-content id="skills">
                     <div class="skills__area">
                         <h3 class="skills__title">Fullstack Developer</h3>
@@ -284,6 +280,7 @@
             </div>
         </section>
     </main>
+    
 
     <!--====================================== FOOTER ======================================-->
     <footer class="footer container">
@@ -293,9 +290,9 @@
     </footer>
 
     <!--====================================== SCROLLREVEAL ======================================-->
-    <script src="https://storage.googleapis.com/kesyasakha.appspot.com/scrollreveal.min.js"></script>
+    <script src="scrollreveal.min.js"></script>
 
     <!--====================================== MAIN JS ======================================-->
-    <script src="https://storage.googleapis.com/kesyasakha.appspot.com/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
